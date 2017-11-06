@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 import './../App.css';
-import logo2 from './../utils/img/logo2.png'
+import logo2 from './../utils/img/logo2.png';
+import find from './../utils/img/find.png';
+import look from './../utils/img/look.png';
+import visit from './../utils/img/visit.png';
+import cardiogram from './../utils/img/cardiogram.png';
+
+
+import Button from 'react-bootstrap/lib/Button';
+
+import Navbar from 'react-bootstrap/lib/Navbar';
 
 class App extends Component {
 
@@ -9,25 +18,27 @@ class App extends Component {
     return (
       <div>
         
-        <nav className="quintapata-nav">
-          <div className="nav-wrapper ">
-            <a href="#" className="brand-logo center"><img className='quintapata-logo' src={logo2} /> </a>
-          </div>
-        </nav>
+
+
+        <Navbar className='navbar-fix'>
+          <Navbar.Header>
+            <Navbar.Brand>
+              <a href="#" className="brand-logo center"><img className='quintapata-logo' src={logo2} /> </a>
+            </Navbar.Brand>
+          </Navbar.Header>
+        </Navbar>
+
+
 
         <div className="qp-home-wrapper">  
           <div className="container">
             <div className="qp-home-container">
               <div className="qp-home-info">
-                <h1>Cuanto amas a tu mascota?</h1>
-                <h2>Encuentra las mejores veterinarias <br /> en tu ciudad</h2>
-                <div>
-                  <a className='dropdown-button btn city-dropdown' href='#' data-activates='dropdown1'>Quito</a>
-                  <ul  id='dropdown1' className='dropdown-content'>
-                    <li><a href="#!">Quito</a></li>
-                  </ul>
-                </div>
-                <a className="waves-effect waves-light btn search-btn"><i className="material-icons left">search</i> Buscar </a>
+                <h1>Encuentra tu mascota ideal.</h1>
+                <h2>Adopta a tu siguiente mascota</h2>
+                
+
+                <Button bsStyle="primary">Buscar</Button>
               </div>
             </div>
           </div>
@@ -38,19 +49,20 @@ class App extends Component {
           <div className="row">
             <div className="col m4 s12">
               <h2 className="qp-blue">Busca</h2>
-              <img src="img/look.png" />
+              <img src={look} />
               <p>Busca las mejores veterinarias en tu ciudad.</p>
             </div>
 
             <div className="col m4 s12">
               <h2 className="qp-blue">Encuentra</h2>
-              <img src="img/find.png" />
+
+              <img src={find} />
               <p>Conoce lo que otros usuarios opinan de tu veterinaria.</p>
             </div>
 
             <div className="col m4 s12">
               <h2 className="qp-blue" >Visita</h2>
-              <img src="img/visit.png" />
+              <img src={visit} />
               <p>Decídete por la mejor veterinaria y visítala.</p>
             </div>
           </div>
@@ -61,8 +73,8 @@ class App extends Component {
           <div className="row">
             <div className="col s12 m3">
               <div className="card">
-                <div className="card-image card-holder-fix">
-                  <img className="card-img-fix" src="img/cardiogram.png" />
+                <div className="">
+                  <img className="card-img-fix" src={cardiogram} />
                 </div>
                 <div className="card-content">
                   <p className="center">Visita a tu Veterinario con más tranquilidad</p>

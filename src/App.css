@@ -1,10 +1,14 @@
-/* Glabal */
+/* Gl0bal */
 .home-mtitle {
   font-size: 2em;
   font-family: 'burbank-small-bold';
   line-height: 1.4em;
   text-align: center;
   margin-bottom: 25px;
+}
+
+.navbar-fix{
+  margin: 0px !important;
 }
 
 /* Home Wrapper */
@@ -93,24 +97,6 @@
   background-image: url('./utils/img/pattern.png')
 }
 
-.card-holder-fix{
-  text-align: center;
-}
-
-.card-img-fix {
-  width: 50px !important;
-  text-align: center;
-  display: inline-block !important;
-  margin-top: 15px
-}
-
-.card-content p {
-  color: #555555 !important;
-  line-height: 20px;
-  font-size: 1em;
-  font-family: 'apercu-regular', sans-serif;
-  font-weight: 400;
-}
 
 /* CLients */
 
